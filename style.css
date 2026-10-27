@@ -56,6 +56,12 @@ section, .nav, .footer { padding-inline: var(--pad-x); }
 
 /* ---------- Nav ---------- */
 .nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,6 +157,7 @@ section, .nav, .footer { padding-inline: var(--pad-x); }
   background: var(--navy);
   text-align: center;
 }
+.invitation { scroll-margin-top: 106px; }
 .invitation h2 { color: #fff; font-size: 38px; font-weight: 700; }
 .invitation .lead { color: var(--on-navy); font-size: 20px; }
 
