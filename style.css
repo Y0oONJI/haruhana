@@ -79,6 +79,8 @@ section, .nav, .footer { padding-inline: var(--pad-x); }
   text-decoration: none;
 }
 
+.brand img, .invitation > img { border-radius: 22%; }
+
 /* ---------- Hero ---------- */
 .hero {
   display: flex;
