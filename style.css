@@ -184,6 +184,12 @@ section, .nav, .footer { padding-inline: var(--pad-x); }
   /* 텍스트가 항상 이미지 위에 오도록 */
   .feature--discovery .copy { order: -1; }
   .copy { max-width: 640px; width: 100%; }
+
+  /* 반응형에서는 전체 좌측 정렬 */
+  .feature { align-items: flex-start; }
+  .visual { justify-content: flex-start; }
+  .hero, .why, .invitation { align-items: flex-start; text-align: left; }
+  .values li { align-items: flex-start; }
 }
 
 /* ---------- Mobile ---------- */
@@ -206,7 +212,7 @@ section, .nav, .footer { padding-inline: var(--pad-x); }
   .why { padding-block: 56px; gap: 16px; }
   .why h2 { font-size: 26px; }
   .values { grid-template-columns: 1fr; margin-top: 8px; }
-  .values li { padding: 16px 0; align-items: center; text-align: center; }
+  .values li { padding: 16px 0; }
   .values strong { font-size: 22px; }
   .values span { font-size: 16px; }
 
